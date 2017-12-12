@@ -193,7 +193,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
 
 ### **Season Three**
    
-* **Chapter Eleven: Enumeration** [**CODE**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/11-Enumeration)
+* **Chapter Eleven: Enumeration** [**CODE**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/11-Enumeration)
    * 11-1 Welcome to the Swift OOP World [**Course Video**](http://t.imooc.com/video/11889)
    * 11-2 Why Enumeration [**Course Video**](http://t.imooc.com/video/11890)
       * [Why Enumeration](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/11-Enumeration/01-Why-Enumeration.playground/Contents.swift)
@@ -209,7 +209,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
    * 11-7 Recursion in Optional Type [**Course Video**](http://t.imooc.com/video/11895)
       * [Recursion in Optional Type](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/11-Enumeration/06-Recursive-Enumeration.playground/Contents.swift)
      
-* **Chapter Twelve: Structure** [**CODE**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/12-Struct)
+* **Chapter Twelve: Structure** [**CODE**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/12-Struct)
    * 12-1 Structure Basics [**Course Video**](http://t.imooc.com/video/11898)
       * [Structure Basics](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/12-Struct/01-Structs-Basics.playground/Contents.swift)
    * 12-2 Initializer [**Course Video**](http://t.imooc.com/video/11899)
@@ -227,7 +227,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
    * 12-6 Structures are Everywhere in Swift [**Course Video**](http://t.imooc.com/video/11903)
       * [Structures are Everywhere in Swift](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/12-Struct/06-Struct-is-Everywhere-in-Swift.playground)
       
-* **Chapter Thirteen: Class** [**CODE**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/13-Class)
+* **Chapter Thirteen: Class** [**CODE**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/13-Class)
 
    * 13-1 Class Basics [**Course Video**](http://t.imooc.com/video/11904)
       * [Class Basics](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/13-Class/01-Class-Basics.playground/Contents.swift)
@@ -240,7 +240,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
        * [Object Identity](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/13-Class/04-Object-Identity.playground/Contents.swift)
    * 13-5 Class or Structure? That's a question. [**Course Video**](http://t.imooc.com/video/11908)
 
-* **Chapter Fourteen: Properties and Methods** [**CODE**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/14-Properties-and-Methods) 
+* **Chapter Fourteen: Properties and Methods** [**CODE**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/14-Properties-and-Methods) 
 
    * 14-1 Computed Properties [**Course Video**](http://t.imooc.com/video/11909)
       * [Computed Properties](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/14-Properties-and-Methods/01-Computed-Property-Getter-and-Setter.playground/Contents.swift)
@@ -260,7 +260,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
    * 14-7 A Peep of Pattern Designing: Singleton [**Course Video**](http://t.imooc.com/video/11915)
       * [Simple Singleton Pattern Demo](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/14-Properties-and-Methods/07-Singleton-Pattern.playground)
 
-* **Chapter Fifteen: Inheritance and Initialization** [**CODE**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/15-Inheritance-and-Initialization)
+* **Chapter Fifteen: Inheritance and Initialization** [**CODE**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/15-Inheritance-and-Initialization)
 
    * 15-1 Inheritance Basics [**Course Video**](http://t.imooc.com/video/11923)
       * [Inheritance Basics](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/15-Inheritance-and-Initialization/01-Inheritance-Basics.playground/Contents.swift)
@@ -273,7 +273,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
    * 15-5 Convenience Initializer and Designated Initializer [**Course Video**](http://t.imooc.com/video/11927)
       * [Convenience Initializer and Designated Initializer](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/15-Inheritance-and-Initialization/05-Convenient-and-Designated-Initializer.playground/Contents.swift)
 
-* **Chapter Sixteen: Documentation** [**CODE**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/16-Documentation)
+* **Chapter Sixteen: Documentation** [**CODE**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/16-Documentation)
 
    * 16-1 Markdown Basics [**Course Video**](http://t.imooc.com/video/12028)
       * [Markdown Basics](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/16-Documentation/01-Markdown-Basics.playground/Contents.swift)
@@ -447,7 +447,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
 
 ###**第三季**
 
-* **第十一章 枚举** [**源码**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/11-Enumeration)
+* **第十一章 枚举** [**源码**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/11-Enumeration)
    * 11-1 欢迎开展Swift面向编程之旅 [**课程视频**](http://t.imooc.com/video/11889)
    * 11-2 为什么要使用枚举？ [**课程视频**](http://t.imooc.com/video/11890)
       * [为什么要使用枚举？](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/11-Enumeration/01-Why-Enumeration.playground/Contents.swift)
@@ -463,7 +463,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
    * 11-7 枚举递归 [**课程视频**](http://t.imooc.com/video/11895)
       * [枚举递归](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/11-Enumeration/06-Recursive-Enumeration.playground/Contents.swift)
 
-* **第十二章: 结构体** [**源码**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/12-Struct)
+* **第十二章: 结构体** [**源码**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/12-Struct)
    * 12-1 结构体基础 [**课程视频**](http://t.imooc.com/video/11898)
       * [结构体基础](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/12-Struct/01-Structs-Basics.playground/Contents.swift)
    * 12-2 构造函数 [**课程视频**](http://t.imooc.com/video/11899)
@@ -481,7 +481,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
    * 12-6 在Swift中无处不在的结构体 [**课程视频**](http://t.imooc.com/video/11903)
       * [Structure is Everywhere in Swift](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/12-Struct/06-Struct-is-Everywhere-in-Swift.playground)
 
-* **第十三章: 类** [**源码**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/13-Class)
+* **第十三章: 类** [**源码**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/13-Class)
 
   * 13-1 类的基础 [**课程视频**](http://t.imooc.com/video/11904)
       * [类的基础](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/13-Class/01-Class-Basics.playground/Contents.swift)
@@ -494,7 +494,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
        * [类的等价](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/13-Class/04-Object-Identity.playground/Contents.swift)
    * 13-5 什么时候使用类？什么时候使用结构体？ [**课程视频**](http://t.imooc.com/video/11908)
 
-* **第十四章: 属性和方法** [**源码**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/14-Properties-and-Methods) 
+* **第十四章: 属性和方法** [**源码**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/14-Properties-and-Methods) 
 
   * 14-1 计算属性 [**课程视频**](http://t.imooc.com/video/11909)
       * [计算属性](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/14-Properties-and-Methods/01-Computed-Property-Getter-and-Setter.playground/Contents.swift)
@@ -514,7 +514,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
    * 14-7 设计模式初探：单例设计模式 [**Course Video**](http://t.imooc.com/video/11915)
       * [简单的单例设计模式](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/14-Properties-and-Methods/07-Singleton-Pattern.playground)
       
-* **第十五章: 继承与构造** [**源码**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/15-Inheritance-and-Initialization)
+* **第十五章: 继承与构造** [**源码**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/15-Inheritance-and-Initialization)
 
    * 15-1 继承基础 [**课程视频**](http://t.imooc.com/video/11923)
       * [继承基础](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/15-Inheritance-and-Initialization/01-Inheritance-Basics.playground/Contents.swift)
@@ -527,7 +527,7 @@ Welcome! This repo is based on the MOOC course [<Play with Swift 2>](http://t.im
    * 15-5 便利构造函数与指定构造函数 [**课程视频**](http://t.imooc.com/video/11927)
       * [便利构造函数与指定构造函数](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/15-Inheritance-and-Initialization/05-Convenient-and-Designated-Initializer.playground/Contents.swift)
 
-* **第十六章: 文档注释** [**源码**](https://github.com/liuyubobobo/Play-with-Swift-2/tree/master/16-Documentation)
+* **第十六章: 文档注释** [**源码**](https://github.com/JeffreyWang2864/Play-with-Swift-3/tree/master/16-Documentation)
 
    * 16-1 Markdown基础 [**课程视频**](http://t.imooc.com/video/12028)
       * [Markdown基础](https://github.com/JeffreyWang2864/Play-with-Swift-3/blob/master/16-Documentation/01-Markdown-Basics.playground/Contents.swift)
