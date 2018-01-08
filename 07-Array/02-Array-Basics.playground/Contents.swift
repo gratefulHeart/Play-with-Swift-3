@@ -40,12 +40,10 @@ vowels[vowels.count-1]
 
 // 获取最小，最大值
 
-/*更新:
- swift 2:
-numbers.minElement()
-vowels.maxElement()
- swift 3中获取数组的极值的api发生了改变。现在可以直接使用.min()和.max()获取最大/最小值
- */
+// swift 2:
+//numbers.minElement()
+//vowels.maxElement()
+// swift 3中获取数组的极值的api发生了改变。现在可以直接使用.min()和.max()获取最大/最小值
 
 numbers.min()      //swift 3
 numbers.max()
@@ -68,12 +66,12 @@ else{
     print("\(letter) is not a vowel")
 }
 
-/*更新:
- swift 2:
-vowels.indexOf("E")
- swift3中可以使用.index(of: )方法
- */
-vowels.index(of: "E")
+// swift 2:
+//vowels.indexOf("E")
+// 在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同
+// 可以使用.index(of: )方法
+
+vowels.index(of: "E")        //swift 3
 
 if let index = vowels.index(of :"E"){               //这块也改成了.index(of: )
     print("E is a vowel in position \(index+1).")
@@ -92,7 +90,9 @@ for number in numbers{
     print(number)
 }
 
-for (index, vowel) in vowels.enumerated(){    //.enumerate()在swift3里面是.enumerated()
+//swift 2: for (index, vowel) in vowels.enumerate(){
+//.enumerate()在swift3里面是.enumerated()
+for (index, vowel) in vowels.enumerated(){    //swift 3
     print("\(index+1): \(vowel)")
 }
 

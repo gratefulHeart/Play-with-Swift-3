@@ -17,7 +17,7 @@ sayHelloTo(name: "Playground", greeting: "Hello")    //swift 3
 // swift内置函数的例子
 var arr = [1,2,3,4,5]
 
-//arr.insert(0, atIndex: 0)     //swift 2   insert的API之前介绍过
+//arr.insert(0, atIndex: 0)     //swift 2
 arr.insert(0, at: 0)            //swift 3
 
 var str = "Hello, Playground"

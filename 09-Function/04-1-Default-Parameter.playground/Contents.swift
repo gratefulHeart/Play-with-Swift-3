@@ -24,12 +24,15 @@ sayHelloTo(name: "Playground", withGreetingWord: "Hi", punctuation: "!!!")   //s
 
 // 默认参数顺序变更是可以的，但最好和声明序一样
 
-/*更新:
- swift 2:
-sayHelloTo(name: "Playground", punctuation: "!!!", withGreetingWord: "Hi")    //swift 2
- swift3中，参数的传入顺序必须和声明的顺序一致，即使显式地声明了参数名称
- */
-//sayHelloTo(name: "Playground", punctuation: "!!!", withGreetingWord: "Hi")      //swift 3报错：argument 'to' must precede argument 'punctuation'
+
+// swift 2: sayHelloTo(name: "Playground", punctuation: "!!!", withGreetingWord: "Hi")
+// swift3中，参数的传入顺序必须和声明的顺序一致，即使显式地声明了参数名称
+// swift 3报错：argument 'to' must precede argument 'punctuation'
+
+
+
+
+sayHelloTo(name: "Playground", punctuation: "!!!", withGreetingWord: "Hi")      //swift 3
 
 
 // 最好将默认参数放在最后, 但不是必须

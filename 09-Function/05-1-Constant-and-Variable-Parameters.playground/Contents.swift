@@ -2,9 +2,9 @@
 
 import UIKit
 
+//swift 2: func toBinary( var num: Int ) -> String{
 // 参数前加入var关键字，使得参数可以在函数体内被改变
 // 在函数的参数列表声明var类型将在Swift3中被弃用
-//func toBinary( var num: Int ) -> String{   //swift 2
 func toBinary(num: Int ) -> String{   //swift 3
     
     var num = num

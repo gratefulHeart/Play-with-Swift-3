@@ -3,7 +3,8 @@
 import UIKit
 
 
-//func changeScores( inout scores: [Int] , by changeScore: (Int)->Int ){   //swift 2
+//swift 2: func changeScores( inout scores: [Int] , by changeScore: (Int)->Int ){
+//swift 3中，inout关键字放在了冒号后面（参数类型的前面）。这样做能使整体看起来更舒服：冒号前面都是名字，冒号后面都是和传入参数类型等有关的内容
 func changeScores(scores: inout [Int] , by changeScore: (Int)->Int ){      //swift 3
     
     //for (index,score) in scores.enumerate(){     //swift 2

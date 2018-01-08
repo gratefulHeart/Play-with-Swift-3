@@ -11,18 +11,14 @@ var user = ["name":"bobobo", "password":"liuyubo", "occupation":"programmer"]
 user["occupation"] = "freelancer"
 user.updateValue("imooc", forKey: "password")
 
-
-/*更新:
- swift 2:
 let oldPassword = user.updateValue("imooc", forKey: "password")
-if let oldPassword = oldPassword, newPassword = user["password"] where oldPassword == newPassword{
-    print("注意：修改后的密码和之前一样，可能导致安全问题！")
-}
- 1) 在swift3中，if后面的where被逗号替代
- 2) swift3中，if后面如果要对多个参数进行赋值，let不能省略
- */
 
-let oldPassword = user.updateValue("imooc", forKey: "password")
+// swift 2:
+//let oldPassword = user.updateValue("imooc", forKey: "password")
+//if let oldPassword = oldPassword, newPassword = user["password"] where oldPassword == newPassword{
+//    print("注意：修改后的密码和之前一样，可能导致安全问题！")
+//}
+//swift3 中if-let-where中条件判断关键词“where”简化成“，”
 if let oldPassword = oldPassword, let newPassword = user["password"], oldPassword == newPassword{   //swift 3
     print("注意：修改后的密码和之前一样，可能导致安全问题！")
 }
@@ -39,13 +35,12 @@ user
 // 删除 键-值 数据对
 user["website"] = nil
 
-/*更新:
- swift2:
-if let email = user.removeValueForKey("email"){
-    print("电子邮箱 \(email) 删除成功")
-}
- swift3中删除字典中的数据对的API发生了改变。新版的API看上去和前面添加以及修改(.updateValue(forKey: ))的API差不多
- */
+
+// swift2:
+//if let email = user.removeValueForKey("email"){
+//    print("电子邮箱 \(email) 删除成功")
+//}
+// swift3中删除字典中的数据对的API发生了改变。新版的API看上去和前面添加以及修改(.updateValue(forKey: ))的API差不多
 
 if let email = user.removeValue(forKey: "email"){      //swift 3
     print("电子邮箱 \(email) 删除成功")

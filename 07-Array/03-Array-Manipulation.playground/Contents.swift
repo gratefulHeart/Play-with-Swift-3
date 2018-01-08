@@ -18,14 +18,14 @@ print(courses)
 courses = courses + ["玩儿转Swift面向协议编程","玩儿转Swift面向函数编程"]
 print(courses)
 
-/*更新:
- swift 2:
-courses.insert("玩儿转Swift设计模式", atIndex: 5)
-courses.insert("玩儿转Swift设计模式", atIndex: 10)
- swift3中的参数名称为at
- */
 
-courses.insert("玩儿转Swift设计模式", at: 5)
+// swift 2:
+//courses.insert("玩儿转Swift设计模式", atIndex: 5)
+//courses.insert("玩儿转Swift设计模式", atIndex: 10)
+// 在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同
+// swift3中的参数名称为at
+
+courses.insert("玩儿转Swift设计模式", at: 5)        //swift 3
 print(courses)
 
 
@@ -36,24 +36,21 @@ print(courses)
 courses.removeFirst()
 print(courses)
 
-/*更新:
- swift 2:
-courses.removeAtIndex(4)
-courses.removeAtIndex(10)
- swift 3中API变成了: .remove(at: )
- */
+// swift 2:
+//courses.removeAtIndex(4)
+//courses.removeAtIndex(10)
+// swift 3中API变成了: .remove(at: )
 
-courses.remove(at: 4)
+courses.remove(at: 4)        //swift 3
 print(courses)
 
-/*更新:
- swift2:
-courses.removeRange(0..<4)
-courses.removeRange(0..<10)
- swift 3中API变成了.removeSubrange(Range)
- */
 
-courses.removeSubrange(0..<1)
+// swift2:
+//courses.removeRange(0..<4)
+//courses.removeRange(0..<10)
+// swift 3中API变成了.removeSubrange(Range)
+
+courses.removeSubrange(0..<1)      //swift 3
  
 //print(courses)
 

@@ -3,10 +3,12 @@
 import UIKit
 
 
-//func changeScores1( inout scores:[Int] ){    //swift 2
+//swift 2: func changeScores1( inout scores:[Int] ){
+//swift 3中，inout关键字放在了冒号后面（参数类型的前面）。这样做能使整体看起来更舒服：冒号前面都是名字，冒号后面都是和传入参数类型等有关的内容
 func changeScores1(scores: inout [Int]){       //swift 3
     
-    //for (index,score) in scores.enumerate(){   //swift 2
+    //swift 2: for (index,score) in scores.enumerate(){
+    //swift 3不支持在没有显式地声明数据类型的情况下使用[]。如果想创建一个空的NSArray，则需要声明数据类型
     for (index, score) in scores.enumerated(){   //swift 3
         scores[index] = Int(sqrt(Double(score))*10)
     }

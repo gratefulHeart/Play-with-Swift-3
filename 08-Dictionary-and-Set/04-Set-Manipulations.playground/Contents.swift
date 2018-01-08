@@ -32,7 +32,7 @@ if let skill = skillsOfC.remove("HTML"){
 // 并
 skillsOfA.union(skillsOfC)
 //skillsOfA.unionInPlace(skilsOfC)    //swift 2
-//skillsOfA.formUnion(skillsOfC)      //swift 3
+skillsOfA.formUnion(skillsOfC)        //swift 3
 
 
 // 交
@@ -40,21 +40,21 @@ skillsOfA.union(skillsOfC)
 //skillsOfA.intersect(skillsOfC)          //swift 2
 skillsOfA.intersection(skillsOfC)         //swift 3
 //skillsOfA.intersectInPlace(skillsOfC)   //swift 2
-//skillsOfA.formIntersection(skillsOfC)   //swift 3
+skillsOfA.formIntersection(skillsOfC)     //swift 3
 
 
 // 减
 //skillsOfA.subtract(skillsOfC)             //swift 2 这里在swift3中等同subtractInPlace
 skillsOfA.subtracting(skillsOfC)            //swift 3 这个才是swift2中subtract的真正方法
 //skillsOfA.subtractInPlace(skillsOfC)      //swift 2
-//skillsOfA.subtract(skillsOfC)             //swift 3 这个的意思等同于subtractInPlace, 不要搞混
+skillsOfA.subtract(skillsOfC)               //swift 3 这个的意思等同于subtractInPlace, 不要搞混
 
 
 // 异或
 //skillsOfA.exclusiveOr(skillsOfC)            //swift 2
 skillsOfA.symmetricDifference(skillsOfC)      //swift 3
 //skillsOfA.exclusiveOrInPlace(skillsOfC)
-//skillsOfA.formSymmetricDifference(skillsOfC)  //swift 3
+skillsOfA.formSymmetricDifference(skillsOfC)  //swift 3
 
 
 // 操作对象可以是数组
@@ -68,12 +68,11 @@ var skillsOfD: Set = ["swift"]
 
 // 子集
 
-/* 更新：
- swift3中的API针对下面所有的API都进行了改变。方法名中的Of被挪到了参数里面
- 比如：
- swift2:    isSubsetOf()
- swift3:    isSubset(of: )
- */
+
+// 在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
+//方法名中的Of被挪到了参数里面
+// swift2:    isSubsetOf()
+// swift3:    isSubset(of: )
 
 //skillsOfD.isSubsetOf(skillsOfA)           //swift 2
 skillsOfD.isSubset(of: skillsOfA)           //swift 3

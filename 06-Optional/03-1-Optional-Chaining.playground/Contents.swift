@@ -5,30 +5,21 @@ import UIKit
 
 // Optional chaining
 
-/*更新：
- swift 2:
 var errorMessage: String? = "Not Found"
 if let errorMessage = errorMessage{
-    errorMessage.uppercaseString
-}
- */
-
-var errorMessage: String? = "Not Found"
-if let errorMessage = errorMessage{
+    //swift2: errorMessage.uppercaseString
+    //在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
     errorMessage.uppercased()      //swift3使用uppercased()
 }
 
-//errorMessage?.uppercaseString    //swift2
+//swift 2: errorMessage?.uppercaseString
+//在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
 errorMessage?.uppercased()    //swift3
 
-//var uppercaseErrorMessage = errorMessage?.uppercaseString    //swift2
+//swift 2: var uppercaseErrorMessage = errorMessage?.uppercaseString
+//在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
 var uppercaseErrorMessage = errorMessage?.uppercased()    //swift 3
 
-/*  swift 2:
-if let errorMessage = errorMessage?.uppercaseString{
-    errorMessage
-}
- */
 if let errorMessage = errorMessage?.uppercased(){     //swift3
     errorMessage
 }

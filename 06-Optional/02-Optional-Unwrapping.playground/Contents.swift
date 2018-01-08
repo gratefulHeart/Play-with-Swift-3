@@ -53,27 +53,25 @@ if let errorCode = errorCode{
     }
 }
 
-/*更新:
- swift2:
-if let errorCode = errorCode , errorMessage = errorMessage{
-    "The errorCode is " + errorCode + "\nThe errorMessage is " + errorMessage
-}
-在swift3中，if后面每个变量都需要加一个let修饰
- 详情: https://stackoverflow.com/questions/24592004/using-multiple-let-as-within-a-if-statement-in-swift
-*/
+// swift2:
+//if let errorCode = errorCode , errorMessage = errorMessage{
+//    "The errorCode is " + errorCode + "\nThe errorMessage is " + errorMessage
+//在swift3以上的xcode编译器中，直接print()一个可选型参数是会有Warning的。在这种情况下可以使用聚合运算符。
+//转载波波老师的post: 对于nil聚合运算符，深入进去其实还有很多有意思的东西值得介绍，欢迎大家阅读我在慕课网的手记《聊聊swift中的"??"》。如果对于其中的一些东西不理解，可能看完第四季的运算符重载和协议相关，就能理解啦：） http://t.imooc.com/article/10325
+//reference: https://stackoverflow.com/questions/40691184/expression-implicitly-coerced-from-string-to-any
+
 if let errorCode = errorCode , let errorMessage = errorMessage{
     "The errorCode is " + errorCode + "\nThe errorMessage is " + errorMessage
 }
 
-/*更新:
- swift2:
-if let errorCode = errorCode , errorMessage = errorMessage where errorCode == "404"{
-    print("Page not found")
-}
-swift3中，where可以被逗号代替
- */
 
-if let errorCode = errorCode , let errorMessage = errorMessage, errorCode == "404"{
+// swift2:
+//if let errorCode = errorCode , errorMessage = errorMessage where errorCode == "404"{
+//    print("Page not found")
+//}
+//swift3 中if-case-where中条件判断关键词“where”简化成“，”
+
+if let errorCode = errorCode , let errorMessage = errorMessage, errorCode == "404"{        //swift 3
     print("Page not found")
 }
 
