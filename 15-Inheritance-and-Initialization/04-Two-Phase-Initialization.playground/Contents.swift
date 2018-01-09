@@ -105,6 +105,7 @@ final class Magician: User {
     init(name: String){
         let defaultGroups = ["Gryffindor","Hufflepuff","Ravenclaw","Slytherin"]
         //let group = defaultGroups[random()%4]         //swift 2
+        //swift3中使用arc4random或者arc4random_uniform方法
         let group = defaultGroups[Int(arc4random()%4)]  //swift 3
         super.init(name: name, group: group)
     }

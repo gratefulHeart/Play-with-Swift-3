@@ -24,7 +24,8 @@ struct Location{
     
     init(coordinateString: String){
         
-        //let commaPos = coordinateString.rangeOfString(",")!.startIndex     //swift 2
+        //swift 2: let commaPos = coordinateString.rangeOfString(",")!.startIndex
+        //在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
         let commaPos = coordinateString.range(of: ",")!.lowerBound           //swift 3
         //let firstElement = Double(coordinateString.substringToIndex(commaIndex))                    //swift 2
         let firstElement = Double(coordinateString[..<commaPos])                                    //swift 4

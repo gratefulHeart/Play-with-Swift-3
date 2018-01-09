@@ -5,7 +5,7 @@ import UIKit
 class SmartAirConditioner{
     
     //private var temperature: Int = 26        //swift 2
-    var temperature: Int = 26                  //swift 2
+    var temperature: Int = 26                  //swift 3
     var temperatureChange: ((Int) -> ())!
     
     // 使用强制解包 weak self

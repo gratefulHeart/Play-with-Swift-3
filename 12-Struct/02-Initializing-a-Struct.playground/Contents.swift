@@ -13,15 +13,13 @@ struct Location{
     // 构造函数
     init(coordinateString: String){
         
-        /*更新:
-        swift 2:
-        let commaIndex = coordinateString.rangeOfString(",")!.startIndex
-        let firstElement = coordinateString.substringToIndex(commaIndex)
-        let secondElement = coordinateString.substringFromIndex(commaIndex.successor())
-         在swift4中，在选取数组范围的时候要尽量使用切片。coordinateString.substring(to: commaIndex)这种语法不会报错，但是估计在swift下一个版本中该方法会被移除
-        */
+//        swift 2: let commaIndex = coordinateString.rangeOfString(",")!.startIndex
+//        swift 2: let firstElement = coordinateString.substringToIndex(commaIndex)
+//        swift 2: let secondElement = coordinateString.substringFromIndex(commaIndex.successor())
+//         在swift4中，在选取数组范围的时候要尽量使用切片。coordinateString.substring(to: commaIndex)这种语法不会报错，但是估计在swift下一个版本中该方法会被移除
+
         let commaIndex = coordinateString.range(of: ",")!.lowerBound
-        let firstElement = coordinateString[..<commaIndex]                   //使用切片
+        let firstElement = coordinateString[..<commaIndex]                   //swift 4, 使用切片
         let secondElement = coordinateString[coordinateString.index(after: commaIndex)...]
         
         // 即使是let的量，若没有初始值，在初始化的过程中仍然可以复制

@@ -9,7 +9,8 @@ import UIKit
     func playerMove()
     func gameEnd()
     
-    //optional func turnStart()         //swift 2
+    //swift 2: optional func turnStart()
+    //swift 3中，所有的可选变量前面要加上@objc
     @objc optional func turnStart()     //swift 3
     //optional func turnEnd()           //swift 2
     @objc optional func turnEnd()       //swift 3

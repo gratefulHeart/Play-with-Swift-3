@@ -7,8 +7,9 @@ class VendingMachine{
     
     struct Item{
         
-        //enum Type: String{         //swift 2
-        enum ItemType: String{       //swift 3, 命名问题
+        //swift 2: enum Type: String{
+        //这里的Type和Item.Type重名了。解决方案有两个：1）换一个名字；2）在用`把Type包裹起来
+        enum ItemType: String{       //swift 3
             case Water
             case Cola
             case Juice
@@ -19,8 +20,9 @@ class VendingMachine{
         var count: Int
     }
     
-    //enum Error: ErrorType, CustomStringConvertible{       //swift 2
-    enum ItemError: Error, CustomStringConvertible{         //swift 3, 命名问题
+    //swift 2: enum Error: ErrorType, CustomStringConvertible{
+    //这里的Type和Item.Type重名了。解决方案有两个：1）换一个名字；2）在用`把Type包裹起来
+    enum ItemError: Error, CustomStringConvertible{         //swift 3
         case NoSuchItem
         case NotEnoughMoney(Int)
         case OutOfStock

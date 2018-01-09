@@ -3,10 +3,16 @@
 import UIKit
 
 var age: Int? = 17
-print(age)      //这里会有警告。因为可选型变量在打印的时候，如果该变量是nil，则会有一个String(nil)的过程。如果想取消掉这个警告可以使用 ?? 或者强制解包
+
+//swift 2: print(age)
+//在swift3以上的xcode编译器中，直接print()一个可选型参数是会有Warning的。在这种情况下可以使用聚合运算符。
+//转载波波老师的post: 对于nil聚合运算符，深入进去其实还有很多有意思的东西值得介绍，欢迎大家阅读我在慕课网的手记《聊聊swift中的"??"》。如果对于其中的一些东西不理解，可能看完第四季的运算符重载和协议相关，就能理解啦：） http://t.imooc.com/article/10325
+//reference: https://stackoverflow.com/questions/40691184/expression-implicitly-coerced-from-string-to-any
+print(age!)
 
 age = nil
-print(age)
+//print(age)          //swift 2
+print(age ?? "")      //swift 3
 
 
 // Optional实际是一个enum
@@ -21,11 +27,14 @@ var website: Optional<String> = Optional.Some("imooc.com")
 
 var website: Optional<String> = Optional.some("imooc.com")    //swift 3
 
-print(website)
+//print(website)          //swift 2
+print(website!)           //swift 3
 
 //website = Optional.None   //swift 2
 website = Optional.none     //swift 3
-print(website)
+
+//print(website)         //swift 2
+print(website ?? "")     //swift 3
 
 
 //website = .Some("imooc.com")  //swift 2

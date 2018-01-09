@@ -15,6 +15,7 @@ struct Matrix{
         data = [[Double]]()
         for _ in 0..<r{
             //let aRow = Array(count: col, repeatedValue: 0.0)   //swift 2
+            //在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
             let aRow = Array(repeatElement(0.0, count: col))     //swift 4
             
             data.append(aRow)

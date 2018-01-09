@@ -31,7 +31,8 @@ struct Location{
     init?(coordinateString: String){
         
         // 第二种写法，使用guard提高可读性
-        //guard let commaIndex = coordinateString.rangeOfString(",")?.startIndex else{    //swift 2
+        //swift 2: guard let commaIndex = coordinateString.rangeOfString(",")?.startIndex else{
+        //在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
         guard let commaIndex = coordinateString.range(of: ",")?.lowerBound else{          //swift 3/4
             return nil
         }

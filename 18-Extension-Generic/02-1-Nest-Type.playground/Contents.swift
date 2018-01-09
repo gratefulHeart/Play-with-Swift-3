@@ -35,6 +35,7 @@ class UI{
         switch(themeMode){
         case .DayMode:
             //fontColor = UIColor.blackColor()        //swift 2
+            //swift3中，颜色从“xxxColor()”变成了"xxx"。直接调用UIColor.xxx即可
             fontColor = UIColor.black                 //swift 3
             //backgroundColor = UIColor.whiteColor()  //swift 2
             backgroundColor = UIColor.white           //swift 3

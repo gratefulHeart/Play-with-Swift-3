@@ -38,7 +38,8 @@ struct Circle: Shape, HasArea{
     var radius: Double
     
     func area() -> Double{
-        //return M_PI * radius * radius       //swift 2
+        //swift 2: return M_PI * radius * radius
+        //swift3中PI放在了Double类下。这样是不是更方便记忆？
         return Double.pi * radius * radius    //swift 3
     }
 }

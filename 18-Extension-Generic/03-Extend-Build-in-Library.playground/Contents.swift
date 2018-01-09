@@ -23,11 +23,13 @@ extension Int{
         }
     }
     
-    func strideWithTask(to end: Int, by strideValue: Int, task: (Int) -> Void ){        //: TODO: 这里问题：变量名的变更
-        
-        //for i in self.stride(to: end, by: stride){        //swift 2
-        for i in Swift.stride(from: self, to: end, by: strideValue){
-        
+    //swift 2: func stride(to end: Int, by strideValue: Int, task: (Int) -> Void ){
+    //swift 3中，Int.stride方法被移除了，并且不能用扩展的方法创造出一个stride方法（编译器提示请用Swift.stride）。所以，在这里我将stirde改名成strideWithTask
+    func strideWithTask(to end: Int, by strideValue: Int, task: (Int) -> Void ){
+
+        //swift 2: for i in self.stride(to: end, by: stride){
+        //由于self.stride被移除，只能用Swift.stride
+        for i in Swift.stride(from: 0, to: end, by: strideValue){
             task(i)
         }
     }
@@ -45,15 +47,22 @@ index.inRange(closedLeft: 0, openedRight: str.count)                    //swift 
     print("Hello, Swift")
 }
 
-for i in 2.stride(to: 10, by: 2){                //: 严重问题，之后填坑
+
+//swift 2: for i in 2.stride(to: 10, by: 2){
+for i in stride(from:0, to: 10, by: 2){
     print(i)
 }
 
-for i in 2.stride(through: 10, by: 2){
+//swift 2: for i in 2.stride(through: 10, by: 2){
+for i in stride(from: 0, through: 10, by: 2){
     print(i)
 }
 
-2.stride(to: 10, by: 2){ num in
+//swift 2: 2.stride(to: 10, by: 2){ num in
+//    print(num*num)
+//}
+
+2.strideWithTask(to: 10, by: 2){ num in       //swift 3
     print(num*num)
 }
 

@@ -64,6 +64,7 @@ class User: Avatar{
     
     static func generateUserName() -> String{
         //return "Player" + String(rand()%1_000_000)           //swift 2
+        //swift3中使用arc4random或者arc4random_uniform方法
         return "Player" + String(Int(arc4random()%1_000_000))  //swift 3
     }
     
@@ -93,6 +94,7 @@ final class Magician: User {
         }
         
         //let group = Magician.houses[random()%4]          //swift 2
+        //swift3中使用arc4random或者arc4random_uniform方法
         let group = Magician.houses[Int(arc4random()%4)]   //swift 3
         super.init(name: name, group: group)
     }
@@ -117,6 +119,7 @@ final class Warrior: User{
     
     convenience override init(name: String, group: String) {
         //let weapon = Warrior.weapons[random()%3]          //swift 2
+        //swift3中使用arc4random或者arc4random_uniform方法
         let weapon = Warrior.weapons[Int(arc4random()%3)]   //swift 3
         self.init(name: name, group: group, weapon: weapon)
     }

@@ -14,7 +14,8 @@ class Player{
     
     func play(){
         
-        //let score = random()%100         //swift 2
+        //swift 2: let score = random()%100
+        //swift3中使用arc4random或者arc4random_uniform方法
         let score = Int(arc4random()%100)  //swift 3
         print("\(name) played and got \(score) scores.")
         

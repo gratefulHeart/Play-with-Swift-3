@@ -1,14 +1,14 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
-/*更新:
- swift 2:
-enum MyError: ErrorType{
-    case BothNilError
-    case JustImpossible
-}
- swift 3中，ErrorType被重命名成了Error
- */
+
+// swift 2:
+//enum MyError: ErrorType{
+//    case BothNilError
+//    case JustImpossible
+//}
+// swift 3中，ErrorType被重命名成了Error
+
 enum MyError: Error{          //swift 3
     case BothNilError
     case JustImpossible

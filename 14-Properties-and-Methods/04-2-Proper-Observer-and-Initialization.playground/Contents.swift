@@ -20,6 +20,7 @@ class UI{
             switch(themeMode){
             case .DayMode:
                 //fontColor = UIColor.blackColor()         //swift 2
+                
                 //backgroundColor = UIColor.whiteColor()   //swift 2
                 fontColor = UIColor.black                  //swift 3
                 backgroundColor = UIColor.white            //swift 3

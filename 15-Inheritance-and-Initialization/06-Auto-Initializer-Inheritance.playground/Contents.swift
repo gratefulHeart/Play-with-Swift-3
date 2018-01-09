@@ -66,6 +66,7 @@ class User: Avatar{
     
     static func generateUserName() -> String{
         //return "Player" + String(rand()%1_000_000)           //swift 2
+        //swift3中使用arc4random或者arc4random_uniform方法
         return "Player" + String(Int(arc4random()%1_000_000))  //swift 3
     }
     

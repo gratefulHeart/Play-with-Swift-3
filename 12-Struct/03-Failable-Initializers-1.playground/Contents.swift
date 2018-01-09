@@ -32,12 +32,15 @@ struct Location{
         
         // 第一种写法，层层嵌套可选型的解包
         // swift 1.0的
-        if let commaIndex = coordinateString.rangeOfString(",")?.startIndex{
+        //swift 2: if let commaIndex = coordinateString.rangeOfString(",")?.startIndex{
+        //在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
+        if let commaIndex = coordinateString.range(of: ",")?.lowerBound{           //swift 3
            
-            if let firstElement = Double(coordinateString.substringToIndex(commaIndex)){
+            //if let firstElement = Double(coordinateString.substringToIndex(commaIndex)){      //swift 2
+            if let firstElement = Double(coordinateString[..<commaIndex]){                      //swift 3
                 
-                if let secondElement = Double(coordinateString.substringFromIndex(commaIndex.successor())){
-                    
+                //if let secondElement = Double(coordinateString.substringFromIndex(commaIndex.successor())){        //swift 2
+                if let secondElement = Double(coordinateString[coordinateString.index(after: commaIndex)...]){     //swift 3
                     latitude = firstElement
                     longitude = secondElement
                 }

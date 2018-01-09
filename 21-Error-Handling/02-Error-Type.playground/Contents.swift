@@ -9,6 +9,7 @@ Int("Hello, Swift")
 
 // 但空不一定是错误
 //"Hello, Swift".rangeOfString("Hi")     //swift 2
+//在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
 "Hello, Swift".range(of: "Hi")           //swift 3
 
 // 更符合语意的表示：使用Swift的Error Handling机制
@@ -19,8 +20,9 @@ class VendingMachine{
 
     struct Item{
         
-        //enum Type: String{         //swift 2
-        enum ItemType: String{       //swift 3, 命名问题
+        //swift 2: enum Type: String{
+        //这里的Type和Item.Type重名了。解决方案有两个：1）换一个名字；2）在用`把Type包裹起来
+        enum ItemType: String{       //swift 3
             case Water
             case Cola
             case Juice
@@ -31,8 +33,9 @@ class VendingMachine{
         var count: Int
     }
     
-    //enum Error: ErrorType{            //swift 2
-    enum ItemError: Error{              //swift 3, 命名问题
+    //swift 2: enum Error: ErrorType{
+    //ErrorType在swift 3中被改名成了Error
+    enum ItemError: Error{              //swift 3
         case NoSuchItem
         case NotEnoughMoney(Int)
         case OutOfStock

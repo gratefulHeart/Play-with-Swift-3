@@ -86,7 +86,20 @@ func += (left: inout Vector3, right: inout Vector3){  //swift 2
 // https://developer.apple.com/library/ios/documentation/Swift/Reference/Swift_StandardLibrary_Operators/index.html#//apple_ref/doc/uid/TP40016054
 
 
-//postfix operator +++ {}     //swift 2
+//swift 2: postfix operator +++ {}
+//swift 3/4中，在声明对运算符重载进行修饰的时候，两个大括号的表达方法已经被弃用了。instead, 使用precedencegroup这样的关键字进行修饰。
+//例子：
+//precedencegroup NameOfTheCustomOperator      //创建一个precedencegroup, 后面随便写上一个名字
+//{
+//    associativity: left                      //这里可以写left, right
+//    higherThan: MultiplicationPrecedence     //这里不是像之前那样写数字了，而是使用higherThan，lowerThan关键字对自定义运算符的运算符优先级进行修饰。
+//    //lowerThan: AdditionPrecedence
+//    //注：这里写的MultiplicationPrecedence，AdditionPrecedence都只是Precedence的一个小部分，具体还有什么其他的Precedence大家可以查阅一下资料
+//}
+//postfix operator ^^>: NameOfTheCustomOperator       //用创建好的precedencegroup进行修饰
+
+//这块内容的改动还是比较大的，大家可以参考https://www.raywenderlich.com/157556/overloading-custom-operators-swift这篇文章
+
 postfix operator +++          //swift 3
 //postfix func +++ (inout vector: Vector3) -> Vector3{   //swift 2
 postfix func +++ (vector: inout Vector3) -> Vector3{     //swift 3
@@ -125,7 +138,21 @@ va ^ vb
 // https://developer.apple.com/library/mac/documentation/Swift/Reference/Swift_StandardLibrary_Operators/index.html#//apple_ref/doc/uid/TP40016054
 
 
-//infix operator **{associativity right precedence 155}   //swift 2
+//swift 2: infix operator **{associativity right precedence 155}
+//swift 3/4中，在声明对运算符重载进行修饰的时候，两个大括号的表达方法已经被弃用了。instead, 使用precedencegroup这样的关键字进行修饰。
+//例子：
+//precedencegroup NameOfTheCustomOperator      //创建一个precedencegroup, 后面随便写上一个名字
+//{
+//    associativity: left                      //这里可以写left, right
+//    higherThan: MultiplicationPrecedence     //这里不是像之前那样写数字了，而是使用higherThan，lowerThan关键字对自定义运算符的运算符优先级进行修饰。
+//    //lowerThan: AdditionPrecedence
+//    //注：这里写的MultiplicationPrecedence，AdditionPrecedence都只是Precedence的一个小部分，具体还有什么其他的Precedence大家可以查阅一下资料
+//}
+//postfix operator ^^>: NameOfTheCustomOperator       //用创建好的precedencegroup进行修饰
+
+//这块内容的改动还是比较大的，大家可以参考https://www.raywenderlich.com/157556/overloading-custom-operators-swift这篇文章
+
+//swift 3:
 precedencegroup ExponentPrecedence{
     associativity: left
     higherThan: MultiplicationPrecedence

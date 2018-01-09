@@ -17,7 +17,8 @@ class Person{
     init?(fullName: String){
         
         guard
-            //let spaceIndex = fullName.rangeOfString(" ")?.startIndex   //swift 2
+            //swift 2: let spaceIndex = fullName.rangeOfString(" ")?.startIndex
+            //在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
         let spaceIndex = fullName.range(of: " ")?.lowerBound             //swift 3
         else{
             return nil

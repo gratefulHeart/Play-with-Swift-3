@@ -49,7 +49,8 @@ class Person{
 var objects: [Any] = [
     CGFloat(3.1415926),
     "imooc",
-    //UIColor.blueColor(),       //swift 2
+    //swift 2: UIColor.blueColor(),
+    //swift3中，颜色从“xxxColor()”变成了"xxx"。直接调用UIColor.xxx即可
     UIColor.blue,                //swift 3
     NSDate(),
     Int(32),

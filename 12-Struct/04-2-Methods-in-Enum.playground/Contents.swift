@@ -18,7 +18,9 @@ enum Shape{
         case let .Rectangle( width , height ):
             return width * height
         case let .Circle( _ , _ , r ):
-            return M_PI*r*r
+            //swift 2: return M_PI*r*r
+            //swift3中PI放在了Double类下。这样是不是更方便记忆？
+            return .pi*r*r      //swift 3
         case .Point:
             return 0
         }

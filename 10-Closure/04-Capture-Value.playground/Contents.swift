@@ -4,7 +4,8 @@ import UIKit
 
 var arr:[Int] = []
 for _ in 0..<100{
-    //arr.append(random()%1000)   //swift 2
+    //swift 2: arr.append(random()%1000)
+    //swift3中使用arc4random或者arc4random_uniform方法
     arr.append(Int(arc4random()%1000))
 }
 

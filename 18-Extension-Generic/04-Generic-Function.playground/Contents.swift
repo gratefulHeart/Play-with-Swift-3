@@ -2,7 +2,8 @@
 
 import UIKit
 
-//func swapTwoInt(inout a: Int , inout _ b: Int){      //swift 2
+//swift 2: func swapTwoInt(inout a: Int , inout _ b: Int){
+//swift 3中，inout关键字放在了冒号后面（参数类型的前面）。这样做能使整体看起来更舒服：冒号前面都是名字，冒号后面都是和传入参数类型等有关的内容
 func swapTwoInt(_ a: inout Int , _ b: inout Int){      //swift 3
     (a,b) = (b,a)
 }

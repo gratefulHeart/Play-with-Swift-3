@@ -35,7 +35,8 @@ struct Matrix{
         
         var arr2d:[[Int]] = []
         for i in 0..<n{
-            //var row = [Int](count: n, repeatedValue: 0)    //swift 2
+            //swift 2: var row = [Int](count: n, repeatedValue: 0)
+            //在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同。
             var row = [Int](repeatElement(0, count: n))      //swift 3
             row[i] = 1
             arr2d.append( row )
