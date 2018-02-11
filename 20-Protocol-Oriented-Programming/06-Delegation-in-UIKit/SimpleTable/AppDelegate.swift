@@ -6,6 +6,15 @@
 //  Copyright © 2016 Yubo Liu. All rights reserved.
 //
 
+/*
+    关于这个项目无法运行的说明:
+    报错：requires a development team. Select a development team in the project editor
+    通常在github上下载别人的repo的时候都会碰到类似的问题。原因是项目工程里原先设定好的开发者账号和目前的不符。通俗来说就是别人的账号你电脑上面没有。
+    解决方法: https://stackoverflow.com/questions/39524148/requires-a-development-team-select-a-development-team-in-the-project-editor-cod
+ */
+
+
+
 import UIKit
 
 @UIApplicationMain
