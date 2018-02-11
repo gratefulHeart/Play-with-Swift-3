@@ -1,3 +1,9 @@
+**写在前面**
+
+如果大家发现了任何错误，请[issue](https://guides.github.com/features/issues/)。谢谢
+
+下面是原来的readme
+
 ---
 
 对swift感兴趣的同学，欢迎加我的个人微信：**liuyubobobo**（头像和github一致），一起加入swift微信群讨论：）请注明：**swift交流**
