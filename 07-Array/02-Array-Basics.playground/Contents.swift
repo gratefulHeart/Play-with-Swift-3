@@ -71,9 +71,9 @@ else{
 // 在Swift3中，API的命名原则被大幅度调整。大多数函数的名字发生了改变。不过使用方法基本相同
 // 可以使用.index(of: )方法
 
-vowels.index(of: "E")        //swift 3
+vowels.firstIndex(of: "E")        //swift 3
 
-if let index = vowels.index(of :"E"){               //这块也改成了.index(of: )
+if let index = vowels.firstIndex(of :"E"){               //这块也改成了.index(of: )
     print("E is a vowel in position \(index+1).")
 }
 else{
